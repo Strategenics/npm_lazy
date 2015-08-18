@@ -12,7 +12,7 @@ VOLUME ["/root/.npm_lazy"]
 EXPOSE 8080
 
 # Default server arguments.
-CMD ["--show-config"]
+CMD ["--show-config --external-url=http://strategenics__npm_lazy:8080"]
 
 # Start the server on entry.
 ENTRYPOINT ["/nodejs/bin/node", "index.js"]
